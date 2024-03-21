@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nodejs-backend
 spec:
-  replicas: 1
+
   selector:
     matchLabels:
       app: nodejs-backend
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nodejs-backend
-        image: your_docker_image
+        image: backend-image
         ports:
         - containerPort: 3000
         env:

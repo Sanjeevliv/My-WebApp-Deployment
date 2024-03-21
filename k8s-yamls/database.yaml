@@ -4,7 +4,7 @@ metadata:
   name: mysql
 spec:
   serviceName: "mysql"
-  replicas: 1
+  
   selector:
     matchLabels:
       app: mysql
@@ -19,13 +19,13 @@ spec:
         image: mysql:5.7
         env:
         - name: MYSQL_ROOT_PASSWORD
-          value: myrootpassword
+          value: HelloIndia
         - name: MYSQL_DATABASE
           value: my_database
         - name: MYSQL_USER
-          value: myuser
+          value: Sanjeevliv
         - name: MYSQL_PASSWORD
-          value: mypassword
+          value: HelloIndia
         ports:
         - containerPort: 3306
         volumeMounts:
